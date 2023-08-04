@@ -35,6 +35,6 @@ LEFT OUTER JOIN counter_party c ON lower(t.bond_holder) = c.bond_holder;
 
 
 
-INSERT into book_user(book_id, users_id)(
+INSERT into book_user(book_id, users_id) values (2, 2)
    SELECT book.id, users.id FROM book,users
 );
