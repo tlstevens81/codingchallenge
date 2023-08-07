@@ -26,6 +26,7 @@ public class Counter_PartyServiceTest {
         Counter_Party counter_party = new Counter_Party();
 
         counter_party.setBond_holder("Zurich Pension fund 4");
+        counter_party.setName("Tyrone");
         counter_party.setId(3);
         Mockito.lenient().when(repo.save(Mockito.any())).thenReturn(new Counter_Party());
         Mockito.lenient().when(repo.count()).thenReturn(2L);

@@ -10,7 +10,7 @@ insert into security(coupon_percent, bond_currency, cusip,face_value_mn,isin,
 
 
 
- insert into counter_party(bond_holder)(
+ insert into counter_party(bond_holder, name) values ("Zurich Pension fund 4", "Tyrone")(
      select distinct lower(bond_holder) FROM total
  );
 

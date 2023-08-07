@@ -11,6 +11,9 @@ public class Counter_Party {
     @Column(name = "bond_holder", nullable = false)
     private String bond_holder;
 
+    @Column(name = "name", nullable = false)
+    private String name;
+
 
     public long getId() {
         return id;
@@ -26,11 +29,16 @@ public class Counter_Party {
         this.bond_holder = bond_holder;
     }
 
+    public String getName() {return name;}
+
+    public void setName(String name) {this.name = name;}
+
     @Override
     public String toString() {
         return "Counter_Party{" +
                 "id=" + id +
                 ", bond_holder='" + bond_holder + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
